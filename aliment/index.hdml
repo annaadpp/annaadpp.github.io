@@ -85,9 +85,9 @@
 
 <!-- Contingut principal -->
 <div class="content-container">
-    <h1>Benvinguts</h1>
-    <p>Em dic Anna i sóc alumne del curs 4tB de <a href="https://agora.xtec.cat/ies-pompeu-fabra-martorell/">l'institut Pompeu Fabra</a></p>
-    <p>A continuació veuràs un llistat amb diferents projectes que farem durant el curs:</p>
+    <h1>Albarginia conventional o ecològica?</h1>
+    <p>He buscat informació primaria académica a <a href="https://schoar.google.com">Google acadèmic</a></p>
+    <p>He trobat un article cientific que compara la composició química de la alberginia coventional i la alberginia ecològica i os posaré un enllaç de l'article i una imatge de l'article que demostri quina alberginia és:</p>
     <ul>
         <li>Creació d'una obra d'art geomètrica interactiva que reaccioni a la meva veu a través d'un micròfon i a diferents tecles del teclat, al ratolí, que faci moviments repetitius amb sin i cos, moviments aleatoris amb random... Utilitzarem p5.js.</li>
         <li>Aliments ecològics i convencionals amb C++.</li>
