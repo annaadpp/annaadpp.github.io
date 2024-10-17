@@ -102,8 +102,8 @@ function draw() {
     translate(shape.x, shape.y);
     scale(size);
 
-    if (selectedShape === 'Coldplay') {
-      drawLogoColdplay(); // Dibuixa el cor
+    if (selectedShape === 'heart') {
+      drawHeart(); // Dibuixa el cor
     } else if (selectedShape === 'moon') {
       drawCrescentMoon(); // Dibuixa la lluna creixent
     } else if (selectedShape === 'rainbow') {
@@ -114,7 +114,7 @@ function draw() {
   });
 }
 
-function drawLogoColdplay() {
+function drawHeart() {
  beginShape();
 vertex(219, 8.1875);
 vertex(226, 8.1875);
