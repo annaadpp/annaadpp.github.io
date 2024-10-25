@@ -1284,14 +1284,65 @@ endShape(CLOSE);
 
 function drawRainbow() {
   // Dibuix d'un arc de Sant Martí
-  let radius = 50;
-  let colors = ['#FF0000', '#FF7F00', '#FFFF00', '#00FF00', '#0000FF', '#4B0082', '#8B00FF']; // Colors de l'arc de Sant Martí
-
-  for (let i = 0; i < colors.length; i++) {
-    stroke(colors[i]);
-    noFill();
-    arc(0, 0, radius + i * 10, radius + i * 10, PI, TWO_PI); // Dibuixar arcs concèntrics amb diferents colors
-  }
+ beginShape();
+vertex(62, 142.1875);
+bezierVertex(69, 146.1875, 78, 150.1875, 86, 154.1875);
+bezierVertex(100, 159.1875, 117, 163.1875, 131, 164.1875);
+bezierVertex(152, 165.1875, 179, 163.1875, 202, 158.1875);
+bezierVertex(226, 154.1875, 246, 149.1875, 268, 143.1875);
+bezierVertex(289, 137.1875, 310, 131.1875, 335, 128.1875);
+bezierVertex(359, 124.1875, 379, 124.1875, 406, 126.1875);
+bezierVertex(427, 128.1875, 448, 130.1875, 475, 135.1875);
+bezierVertex(504, 143.1875, 532, 151.1875, 552, 160.1875);
+endShape();
+    beginShape();
+vertex(60, 170.1875);
+bezierVertex(70, 175.1875, 87, 183.1875, 106, 188.1875);
+bezierVertex(122, 192.1875, 137, 194.1875, 159, 194.1875);
+bezierVertex(184, 192.1875, 211, 187.1875, 239, 180.1875);
+bezierVertex(263, 174.1875, 285, 167.1875, 305, 162.1875);
+bezierVertex(327, 157.1875, 350, 154.1875, 372, 154.1875);
+bezierVertex(392, 154.1875, 416, 156.1875, 439, 159.1875);
+bezierVertex(463, 163.1875, 463, 163.1875, 488, 167.1875);
+bezierVertex(510, 174.1875, 531, 180.1875, 548, 186.1875);
+endShape();
+    beginShape();
+vertex(61, 200.1875);
+bezierVertex(73, 206.1875, 89, 213.1875, 113, 220.1875);
+bezierVertex(140, 224.1875, 165, 224.1875, 194, 220.1875);
+bezierVertex(221, 214.1875, 245, 208.1875, 268, 200.1875);
+bezierVertex(290, 195.1875, 312, 189.1875, 333, 187.1875);
+bezierVertex(355, 183.1875, 382, 185.1875, 401, 185.1875);
+bezierVertex(425, 186.1875, 446, 189.1875, 475, 194.1875);
+bezierVertex(497, 200.1875, 517, 205.1875, 544, 215.1875);
+endShape();
+    beginShape();
+vertex(58, 228.1875);
+bezierVertex(75, 236.1875, 100, 247.1875, 122, 251.1875);
+bezierVertex(149, 254.1875, 174, 253.1875, 198, 248.1875);
+bezierVertex(222, 243.1875, 246, 237.1875, 276, 230.1875);
+bezierVertex(302, 221.1875, 326, 217.1875, 355, 214.1875);
+bezierVertex(383, 213.1875, 416, 214.1875, 436, 217.1875);
+bezierVertex(461, 221.1875, 477, 225.1875, 500, 230.1875);
+bezierVertex(526, 239.1875, 549, 247.1875, 567, 254.1875);
+endShape();
+    beginShape();
+vertex(59, 257.1875);
+bezierVertex(71, 264.1875, 90, 272.1875, 119, 279.1875);
+bezierVertex(145, 282.1875, 173, 281.1875, 202, 276.1875);
+bezierVertex(242, 268.1875, 274, 259.1875, 303, 249.1875);
+bezierVertex(329, 246.1875, 352, 244.1875, 384, 242.1875);
+bezierVertex(415, 244.1875, 442, 247.1875, 442, 247.1875);
+bezierVertex(484, 255.1875, 517, 265.1875, 550, 277.1875);
+endShape();
+    beginShape();
+vertex(61, 290.1875);
+bezierVertex(86, 299.1875, 118, 309.1875, 159, 313.1875);
+bezierVertex(201, 307.1875, 239, 298.1875, 276, 286.1875);
+bezierVertex(314, 277.1875, 346, 272.1875, 390, 272.1875);
+bezierVertex(415, 274.1875, 449, 278.1875, 483, 285.1875);
+bezierVertex(504, 290.1875, 536, 300.1875, 568, 314.1875);
+endShape();
 }
 
 function handleFileUpload(event) {
