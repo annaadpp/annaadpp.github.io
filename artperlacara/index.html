@@ -73,6 +73,7 @@
     // Funció que es crida al començar
     function setup() {
       createCanvas(windowWidth, windowHeight); // crea una zona de dibuix de la mida de la finestra
+      background(0, 0, 0);
       video = createCapture(VIDEO);            // activa la webcam
       video.size(480, 480);                    // estableix la mida del vídeo
       video.hide();                            // amaga el vídeo per defecte
@@ -267,7 +268,6 @@ vertex(287, 576.1875);
 vertex(289, 497.1875);
 endShape(CLOSE);
           nofill
-          background(255,0,0);
           beginShape();//fondo
 vertex(690, 741.1875);
 vertex(445, 529.1875);
