@@ -73,7 +73,6 @@
     // Funció que es crida al començar
     function setup() {
       createCanvas(windowWidth, windowHeight); // crea una zona de dibuix de la mida de la finestra
-      background(0, 0, 0);
       video = createCapture(VIDEO);            // activa la webcam
       video.size(480, 480);                    // estableix la mida del vídeo
       video.hide();                            // amaga el vídeo per defecte
@@ -89,8 +88,7 @@
 
     // Redimensiona el canvas si canvia la mida de la finestra
     function windowResized() {
-      resizeCanvas(windowWidth, windowHeight);
-      background(0,0,0);
+      resizeCanvas(windowWidth, windowHeight)
     }
 
     // Quan el model està carregat correctament
@@ -268,7 +266,7 @@ vertex(332, 509.1875);
 vertex(287, 576.1875);
 vertex(289, 497.1875);
 endShape(CLOSE);
-          nofill
+          fill(255,255,255);
           beginShape();//fondo
 vertex(690, 741.1875);
 vertex(445, 529.1875);
