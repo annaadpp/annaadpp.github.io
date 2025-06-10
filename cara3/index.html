@@ -1,0 +1,35 @@
+let xoff=0;// posició inicial del soroll i la mosca
+let x,y,r,g,b,w,h;
+let rosa;
+let carn;
+function setup () {
+createCanvas (500, 500);//mesura de la zona de dibuix
+}
+function draw () {
+frameRate (10);// regula la velocitat a 10 fotogrames per segon
+x=random (-5, 5); 
+r=random (0, 255);
+w=random (-10, 10);
+g=random (0, 255);
+h=random (-5, 5);
+b=random (100, 255);
+  rosa=random (0,90);
+  carn=random (0,50);
+background (250, 202-rosa, 241);//fons rosa de tot el dibuix
+fill (254,207-carn ,159-carn );//color de la cara
+ellipse (250+x, 250, 160+w, 200);//tamany cara
+fill (79, 46, 18+r);//color de l'ull dret
+ellipse (210+x, 215, 40, 25);//ull dret
+fill (79, 46+g, 18);//color ull esquerra
+ellipse (290+x, 215, 40, 25);//ull esquerra
+fill (79, 46, 18);//color boca
+arc (250+x, 300, 40, 25+h, 0, PI);//boca
+  let n=noise (xoff)*width;//noise genera un número entre 0 i 1
+  //el multiplico per width perquè es mogui per tota l'amplada
+  xoff+=0.01;//que vagi canviant el número de soroll/noise
+  fill(0,0,0);//que l'opmpli de color negre
+  ellipse (n,20+n, 15, 10);//n significa la posició x del centre del cos negre de la mosca 
+  fill(255,255,255);//color blanc de les ales
+  ellipse (n,13+n, 5, 10);//l'ala està a 7 pixels a la esquerra del cos
+  ellipse(n, 27+n, 5,10);//l'ala està a 7 pixels a la dreta del cos
+}
